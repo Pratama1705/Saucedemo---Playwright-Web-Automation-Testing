@@ -1,0 +1,15 @@
+objectModels:
+  # -- USERNAME FIELD --
+  usernameField:
+    webView: 'input[data-test="username"]'
+    mobileView: 'input[data-test="username"]'
+
+  # -- PASSWORD FIELD --
+  passwordField:
+    webView: 'input[data-test="password"]'
+    mobileView: 'input[data-test="password"]'
+
+  # -- LOGIN BUTTON --
+  loginButton:
+    webView: 'input[data-test="login-button"]'
+    mobileView: 'input[data-test="login-button"]'

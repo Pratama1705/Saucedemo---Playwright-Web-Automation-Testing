@@ -1,0 +1,20 @@
+objectModels:
+  # -- ADD BACKPACK CART BUTTON --
+  addBackpackCartButton:
+    webView: 'button[data-test="add-to-cart-sauce-labs-backpack"]'
+    mobileView: 'button[data-test="add-to-cart-sauce-labs-backpack"]'
+
+  # -- REMOVE BACKPACK CART BUTTON --
+  removeBackpackCartButton:
+    webView: 'button[data-test="remove-sauce-labs-backpack"]'
+    mobileView: 'button[data-test="remove-sauce-labs-backpack"]'
+
+  # -- SHOPPING CART BUTTON --
+  shoppingCartButton:
+    webView: 'div[id="shopping_cart_container"]'
+    mobileView: 'div[id="shopping_cart_container"]'
+
+  # -- SHOPPING CART PAGE --
+  shoppingCartPage:
+    webView: 'xpath=//span[contains(text(), "Your Cart")]'
+    mobileView: 'xpath=//span[contains(text(), "Your Cart")]'

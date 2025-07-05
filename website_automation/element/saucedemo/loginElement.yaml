@@ -1,0 +1,10 @@
+objectModels:
+  # -- LOGIN PAGE IDENTIFIER --
+  loginContainer:
+    webView: 'div[data-test="login-container"]'
+    mobileView: 'div[data-test="login-container"]'
+
+  # -- SUCCESS LOGIN IDENTIFIER --
+  loginSuccessIdentifier:
+    webView: 'span[data-test="title"]'
+    mobileView: 'span[data-test="title"]'
