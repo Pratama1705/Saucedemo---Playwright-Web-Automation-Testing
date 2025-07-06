@@ -1,7 +1,15 @@
-
-# Playwright
+# =====================
+# PLAYWRIGHT SETUP
+# =====================
 node_modules/
 /test-results/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# =====================
+# ALLURE REPORT SETUP
+# =====================
+/.allure/
+/allure-report/
+/allure-results/

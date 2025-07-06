@@ -1,0 +1,10 @@
+{
+  "staging": {
+    "username": "standard_user",
+    "password": "secret_sauce"
+  },
+  "beta": {
+    "username": "standard_user",
+    "password": "secret_sauce"
+  }
+}

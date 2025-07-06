@@ -1,19 +1,8 @@
-import { expect, test } from './../../fixtures/action-fixtures';
+import { expect, test } from './../../fixtures/base-fixtures';
 import { testConfig } from './../../test-config';
 
-test.beforeEach('Login Sauce Demo', async ({ actionWeb }) => {
-  // Visit website
-  await actionWeb.visitWebsite(testConfig.baseUrl);
-  await actionWeb.waitForElementShown('saucedemo/loginElement/loginContainer');
-
-  // Input email & password
-  await actionWeb.fillInput('saucedemo/commonElement/usernameField', 'standard_user');
-  await actionWeb.fillInput('saucedemo/commonElement/passwordField', 'secret_sauce');
-
-  // Click login button
-  await actionWeb.clickElement('saucedemo/commonElement/loginButton');
-  await actionWeb.waitForElementShown('saucedemo/loginElement/loginSuccessIdentifier');
-  await actionWeb.waitSomeSeconds(2);
+test.beforeEach('Login Sauce Demo', async ({ login }) => {
+  await login();
 });
 
 test('Scenario : Add Item to Cart & Checking Cart Item', async ({ actionWeb }) => {

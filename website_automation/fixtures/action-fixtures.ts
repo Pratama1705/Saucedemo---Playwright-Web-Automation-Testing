@@ -1,14 +1,10 @@
-import { test as base, Page } from '@playwright/test';
-import { Action } from './../actions/actionsFile';
+import { Action } from '../actions/actionsFile';
+import { testInfo } from '@playwright/test';
 
-// Extend Playwright's base test with a custom "action" fixture
-type ActionFixtures = {
-  action: Action;
-};
-
-export const test = base.extend<ActionFixtures>({
-  actionWeb: async ({ page }, use) => {
-    const actionWeb = new Action(page);
-    await use(actionWeb);
-  },
-});
+export const extendActionFixture = (baseTest) =>
+  baseTest.extend({
+    actionWeb: async ({ page }, use, testInfo) => {
+      const action = new Action(page, testInfo);
+      await use(action);
+    },
+  });
